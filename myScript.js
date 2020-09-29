@@ -15,11 +15,15 @@ for(let i=1;i<= lenDB/10 ;i++){
     let positionx= -10;
     for(let j=1;j<=10; j++){
         const newEntity = document.createElement('a-entity');
+    
 
         newEntity.setAttribute('gltf-model', `./assets/${dataBaseCopy[count].location}.gltf`);
         newEntity.setAttribute('scale', '0.3 0.3 0.3');
         newEntity.setAttribute('position', `${positionx} 0 ${positiony}`);
         newEntity.setAttribute('navigate-on-click', `url:${dataBaseCopy[count].url}`);
+        
+    
+
         sceneEl.appendChild(newEntity);
         positionx+= 10
         count++;
