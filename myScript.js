@@ -2,7 +2,7 @@
 import {db} from './dataBase.js';
 
 const dataBaseCopy =[...db];
-//dataBaseCopy.sort(() => Math.random() - 0.5);
+dataBaseCopy.sort(() => Math.random() - 0.5);
 
 const sceneEl = document.querySelector('a-scene');
 sceneEl.setAttribute('background', {color: 'red'});
@@ -11,9 +11,9 @@ let positiony= 0;
 let lenDB = dataBaseCopy.length;
 let count = 0;
 
-for(let i=1;i<= lenDB/10 ;i++){
-    let positionx= -10;
-    for(let j=1;j<=10; j++){
+for(let i=1;i<= lenDB/40 ;i++){
+    let positionx= -150;
+    for(let j=1;j<=40;j++){
         const newEntity = document.createElement('a-entity');
     
 
